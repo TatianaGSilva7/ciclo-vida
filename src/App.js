@@ -16,7 +16,7 @@ function Contador(){
     document.title = 'Contagem: ${contador}';
     console.log('Componente atualizado ou montado. Novo valor do contador:', contador);
   
-    //o retono da função (funcçao limpeza)
+    //o retono da função (funçao limpeza)
     //comportamenteo similar ao componentWilllUnmount(desmontagem)
 
     return()=> {
