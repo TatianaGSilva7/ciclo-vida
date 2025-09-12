@@ -9,7 +9,7 @@ function Contador(){
     console.log('Componente montado');
   },[]);
 
-  //useEffect com dependencia de 'contado':
+  //useEffect com dependencia de 'contador':
   //Comportamento similar ao componentDidMount e componenteDidUpdate
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function Contador(){
     //comportamenteo similar ao componentWilllUnmount(desmontagem)
 
     return()=> {
-      console.log('Função de limpeza executada. O contador será remivido')
+      console.log('Função de limpeza executada. O contador será removido')
     };
 
   }, [contador]);
