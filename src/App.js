@@ -13,7 +13,7 @@ function Contador(){
   //Comportamento similar ao componentDidMount e componenteDidUpdate
 
   useEffect(() => {
-    document.title = 'Contagem: ${contador}';
+    document.title = `Contagem: ${contador}`;
     console.log('Componente atualizado ou montado. Novo valor do contador:', contador);
   
     //o retono da função (funçao limpeza)
@@ -27,6 +27,7 @@ function Contador(){
 
   const incrementar = () => {
     setContador(contador+1);
+    console.log(contador)
   };
 
   return(
